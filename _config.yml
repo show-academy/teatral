@@ -8,7 +8,7 @@ description: >-
   мы научим тебя играть!
 url: ''
 baseurl: ''
-# google_analytics: 'UA-124908281-1'
+google_analytics: 'UA-124908281-1'
 # disqus_shortname: 'your-disqus-name'
 
 author:
