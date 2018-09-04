@@ -1578,9 +1578,10 @@ input[type="tel"] {
 		margin-top: 5px;
 		margin-left: 0; } }
 @media all and (max-width: 960px) {
+/*
 	.btn-mobile-menu {
 		display: block; }
-
+*/
 	.panel-main {
 		display: table;
 		position: relative; }
@@ -1622,7 +1623,7 @@ input[type="tel"] {
 			.panel-cover.panel-cover--collapsed .panel-cover__divider {
 				display: none;
 				margin: 1em auto; }
-
+/*
 	.navigation-wrapper {
 		display: none;
 		position: fixed;
@@ -1653,7 +1654,7 @@ input[type="tel"] {
 			.cover-navigation.navigation--social .navigation li {
 				display: inline-block;
 				width: 25.8%; }
-
+*/
 	.content-wrapper {
 		width: 80%;
 		max-width: none;
@@ -1662,10 +1663,13 @@ input[type="tel"] {
 	.content-wrapper__inner {
 		margin-right: 0;
 		margin-left: 0; }
-
+/*
 	.navigation__item {
 		width: 100%;
-		margin: 0 0 .4em 0; } }
+		margin: 0 0 .4em 0; } 
+*/
+}
+
 @media all and (max-width: 340px) {
 	.panel-main__inner {
 		padding: 0 5%; }

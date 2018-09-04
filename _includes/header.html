@@ -22,13 +22,14 @@
             {% for page in site.pages %}
               {% if page.layout == 'page' %}
               <ul class="navigation">
-                <li class="navigation__item"><a href="{{ site.baseurl }}{{ page.permalink }}" title="{{ site.title }} - {{ page.title }}" class="blog-button">{{ page.label }}</a></li>
+                <li class="navigation__item"><a href="{{ site.baseurl }}{{ page.permalink }}#h1" title="{{ site.title }} - {{ page.title }}" class="blog-button">{{ page.label }}</a></li>
               </ul>
               {% endif %}
             {% endfor %}
-            <ul class="navigation">
+            {% comment %}<ul class="navigation">
               <li class="navigation__item"><a href="{{ site.baseurl }}/#blog" title="{{ site.title }} - Блог" class="blog-button">Блог</a></li>
             </ul>
+            {% endcomment %}
           </nav>
 
           <nav class="cover-navigation navigation--social">

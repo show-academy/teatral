@@ -3,6 +3,7 @@ layout: page
 label: Контакты
 title: Контакты
 permalink: /contact/
+published: false
 ---
 
 Свяжитесь с нами.
