@@ -1,48 +1,117 @@
 # Site settings
 title: >-
   Театральная Студия
-  Ивана Алексеева
 description: >-
-  Если ты хочешь стать настоящим актером, 
-  приходи в нашу театральную студию, 
-  мы научим тебя играть!
-url: ''
-baseurl: ''
+  Занятия по актерскому мастерству для взрослых.
+
+languages: ["ee", "ru", "en"]
+default_lang: "ru"
+exclude_from_localization: ["javascript", "images", "css"]
+parallel_localization: true
+
+# put your disqus here
+disqus_shortname:
+reading_time:     false # if true, shows the estimated reading time for a post
+words_per_minute: 200
+logo:             images/Art-Cherdak-Logo-360x180.png # logo visible in the topbar
+excerpt_separator: <!--more-->
+
+# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+url: 
+
+# draw your top menu here
+# each item must have a title and a url.
+#   To list post categories. use type: 'categories'
+#   To create sub categories. add a submenu item
+# See the example
+menu:
+  - title: 'О нас'
+    url: '/about'
+  - title: 'Программа'
+    url: '/program'
+  - title: 'Регистрация'
+    url: '/signup'
+  - title: 'Расписание'
+    url: '/studies'
+#  - title: 'Темы'
+#    url: '/categories'
+#    type: 'categories'
+
+# Owner/author information
+owner:
+  name:           Art-Cherdak
+  site:           https://www.teatral.ee/
+  avatar:         images/avatar.jpg
+  email:          teatral.tallinn@gmail.com
+  phone:          
+  # Twitter nick for use in Twitter cards and follow button.
+  twitter: # if no twitter in this config, the twitter follow button will be removed
+  # GitHub nick for use in follow button in author block.
+  github: 
+
+# Twitter account associated with the site if different from owner/author twitter account.
+# Used in Twitter cards.
+twitter:
+
+# Social networking links used in author block underneath posts. Update and remove as you like.
+social:
+  - title: "phone"
+    url: "callto:+37255994317"
+    text: "+37255994317"
+  - title: "envelope"
+    url: "mailto:teatral.tallinn@gmail.com"  
+    text: "teatral.tallinn@gmail.com"  
+  - title: "facebook"
+    url: "http://fb.me/morfeyiv"
+    text: morfeyiv
+#  - title: "github"
+#    url: "https://github.com/aron-bordin"
+#  - title: "linkedin"
+#    url: "https://br.linkedin.com/in/aronbordin"
+#  - title: "youtube"
+#    url: "https://www.youtube.com/channel/UCfnSek-9HPWOx5e2pH7VFgg"
+
+# Background image to be tiled on all pages
+background: full-bloom-bg.png
+
+# Analytics and webmaster tools stuff goes here
 google_analytics: 'UA-124908281-1'
-# disqus_shortname: 'your-disqus-name'
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
 
-author:
-  name: Иван Алексеев
-  email: teatral.tallinn@gmail.com
-  twitter_username:
-  facebook_username: morfeyiv
-  github_username:
-  linkedin_username:
-
-defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
-    values:
-        layout: 'post'
-
-# Build settings
-destination: _site
-paginate: 10
-permalink: /:year/:title/
-markdown: kramdown
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Europe/Tallinn
+locale:      en_US
+future:      true
 highlighter: rouge
-
+markdown:    kramdown
 sass:
-    sass_dir: _sass
-    style: compressed
+  sass_dir: _sass
+  style: compressed
 
-kramdown:
-  # use Github Flavored Markdown
-  input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
 
-plugins: ['jekyll-paginate']
-exclude: ['LICENSE', 'README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+# Amount of post to show on home page
+paginate: 5
+
+# if true, shows the floatting share buttons
+float_share: true
+
+# Octopress
+# Default extensions
+post_ext: md
+page_ext: md
+# Found in _templates/
+post_layout: post
+page_layout: page
+# Format titles with titlecase?
+titlecase: true
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", ".sublime-project", ".sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+plugins: [jekyll-paginate, jekyll-polyglot]
+#theme: neo-hpstr-jekyll-theme
+
