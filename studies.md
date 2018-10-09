@@ -20,4 +20,4 @@ permalink: /studies/
 - Воскресенье в 15.00 до 16.15
 
 ### Стоимость
-[Свяжитесь с нами](mailto://teatral.tallinn@gmail.com)
+[Свяжитесь с нами](mailto:{{site.owner.email}})

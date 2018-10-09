@@ -56,9 +56,6 @@ twitter:
 
 # Social networking links used in author block underneath posts. Update and remove as you like.
 social:
-  - title: "phone"
-    url: "callto:+37255994317"
-    text: "+37255994317"
   - title: "envelope"
     url: "mailto:teatral.tallinn@gmail.com"  
     text: "teatral.tallinn@gmail.com"  

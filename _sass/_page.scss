@@ -279,9 +279,13 @@ header .entry-meta {
 	display: flex;
 }
 .author-bio{
-	padding-top: 30px;
+	padding-top: 10px;
 	padding-left: 20px;
+	display:inline-block;
 	flex-grow: 1;
+}
+.author-info {
+	display:inline-block;
 }
 ul.social-buttons li a {
     display: block;
