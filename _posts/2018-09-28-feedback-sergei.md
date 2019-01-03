@@ -4,7 +4,7 @@ title: Отзывы наших учеников
 tags: [отзывы]
 categories: [отзывы]
 image:
-    feature: pink-flowers.jpg
+    feature: sagar-patil-652846-unsplash.jpg
 ---
 
 "Хотела бы написать о вчерашнем занятии, оно было восхитительно! 

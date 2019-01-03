@@ -1,8 +1,9 @@
 ---
-layout: page
-label: О Нас
-title: О Нас
+layout: post
+label: О нас
 permalink: /about/
+image:
+    feature: kyler-nixon-208875-unsplash.jpg
 ---
 
 ## Студия

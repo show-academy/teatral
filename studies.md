@@ -1,13 +1,14 @@
 ---
-layout: page
+layout: post
 label: Расписание
-title: Расписание
 permalink: /studies/
+image:
+    feature: vincent-guth-151173-unsplash.jpg
 ---
 
 ### Дети
-- Вторник в 15.30 до 16.45
-- Четверг в 16.00 до 17.15
+- Вторник в 15.30 до 16.30
+- Пятница в 16.00 до 17.00
 
 ### Взрослые
 
