@@ -17,8 +17,3 @@ image:
 ![Педагоги]({{ "/images/teachers-actors.jpg" | absolute_url }})
 
 [Иван Алексеев]({% link about-ivan-alexeev.md %}), Марина Малова, Дмитрий Кордас, Сергей Фурманюк.
-
-## Адрес
-
-Студия удобно расположена в центре Таллинна по адресу Pärnu mnt. 64, Tallinn. 
-

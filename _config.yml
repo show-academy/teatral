@@ -1,6 +1,7 @@
 # Site settings
+title_short: Театральная Студия
 title: >-
-  Театральная Студия
+  Театральная Студия ART-CHERDAK
 description: >-
   Занятия по актерскому мастерству для взрослых.
 
@@ -28,12 +29,14 @@ url:
 menu:
   - title: 'О нас'
     url: '/about'
-  - title: 'Программа'
+  - title: 'Обучение'
     url: '/program'
   - title: 'Регистрация'
     url: '/signup'
   - title: 'Расписание'
     url: '/studies'
+  - title: 'Контакты'
+    url: '/contacts'  
 #  - title: 'Темы'
 #    url: '/categories'
 #    type: 'categories'

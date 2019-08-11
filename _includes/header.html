@@ -9,7 +9,7 @@
           {% if site.logo %}
             <img class="logo" src="{{site.url}}/{{ site.logo }}" alt="{{ site.title }}">
           {% endif %}
-          <a href="{{site.url}}/" class="title"> {{ site.title }}</a>
+          <a href="{{site.url}}/" class="title"> {{ site.title_short }}</a>
         </a>
       </li>
       {% for menu in site.menu reversed %}
@@ -43,7 +43,7 @@
             {% endif %}
         {% endif %}
       {% endfor %}
-      <li class="header-item"><a href="{{site.url}}/search"><h3><i class="fa fa-search"></i></h3></a></li>
+      <!-- <li class="header-item"><a href="{{site.url}}/search"><h3><i class="fa fa-search"></i></h3></a></li> -->
     </ul>
   </div>
 {% if page.title %}
