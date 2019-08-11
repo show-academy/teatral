@@ -3,7 +3,7 @@ layout: post
 label: Контакты
 permalink: /contacts/
 image:
-    feature: pink-flowers.jpg
+    feature: danielle-macinnes-1024.jpg
 ---
 
 # Контакты
