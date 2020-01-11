@@ -1,13 +1,13 @@
 ---
 layout: post
-label: Расписание
-permalink: /studies/
+title: Ждем новых учеников в 2020 году!
+tags: [отзывы]
+categories: [отзывы]
 image:
     feature: luis-alfonso-orellana-221720-unsplash.jpg
 ---
-
-# Расписание на учебный год 2019/20 
 (в расписании возможны изменения)
+
 
 ## Взрослые: (от 21 до 99 лет) 
 _[Зарегистрируйтесь здесь](https://forms.gle/pMksJDyn8tTsQGMK7){:target="_blank"}_
