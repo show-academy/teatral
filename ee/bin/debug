@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+# Run this script to serve local version of the web site
+echo "Serving locally"
+bundle exec jekyll serve

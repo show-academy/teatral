@@ -1,0 +1,50 @@
+#!/usr/bin/env sh
+
+# Run this script to deploy the app to Github Pages.
+
+# Exit if any subcommand fails.
+set -e
+echo "Started deploying"
+echo "Will commit all changes and push."
+git add . && git status
+
+echo "---"
+echo "Describe the changes: "
+read commitmessage
+
+git commit -m"$commitmessage" && git push
+if [ $? -ne 0 ]; then
+    echo "Could not commit/push, exiting." 
+    exit 1
+fi
+
+# Build site.
+bundle update
+rm -rf .jekyll-cache
+bundle exec jekyll build
+
+# Checkout gh-pages branch.
+if [ `git branch | grep gh-pages` ]
+then
+  git branch -D gh-pages
+fi
+git checkout -b gh-pages
+
+# Delete and move files.
+cp CNAME _site/
+find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
+mv _site/* .
+rm -R _site/
+
+# Push to gh-pages.
+git add -fA
+git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
+git push -f -q origin gh-pages
+
+# Move back to previous branch.
+git checkout -
+bundle update
+
+echo "Deployed Successfully!"
+
+exit 0
