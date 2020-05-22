@@ -18,16 +18,17 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
+# Build site.
+bundle update
+rm -rf .jekyll-cache
+bundle exec jekyll build
+
 # Checkout gh-pages branch.
 if [ `git branch | grep gh-pages` ]
 then
   git branch -D gh-pages
 fi
 git checkout -b gh-pages
-
-# Build site.
-#bundle update
-bundle exec jekyll build
 
 # Delete and move files.
 cp CNAME _site/
